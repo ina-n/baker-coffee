@@ -1,0 +1,774 @@
+@font-face{ font-family: 'HarabaraHand'; 
+src: url('../fonts/HarabaraHand-webfont.eot'); 
+src: url('../fonts/HarabaraHand-webfont.eot?iefix') format('eot'),
+ url('../fonts/HarabaraHand-webfont.woff') format('woff'), 
+ url('../fonts/HarabaraHand-webfont.ttf') format('truetype'), 
+ url('../fonts/HarabaraHand-webfont.svg#webfont') format('svg'); } 
+
+#home  a:hover {
+	color: #666;
+}	
+
+.cf:before,	/*Clear Fix*/
+.cf:after {
+  content: "";
+  display: table;
+}
+ 
+.cf:after {
+  clear: both;
+}
+ 
+.cf {
+  zoom: 1; /* ie 6/7 */
+}
+
+
+header, section, footer{
+	max-width: 960px;
+	margin: 0 auto;
+	
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+.contain_float {
+	width: 960px;
+}
+
+
+
+
+
+/*********************************************
+HEADER & SLIDE DOWN MAIN MENU
+**********************************************/
+
+#slideDownMenu {
+	width: 100%;
+	position: absolute;
+	background: #404045;
+	display: none; /*disables menu till jquery is enabled */
+}
+
+#slideDownMenu ul {
+	text-align: center;
+	z-index: 5;
+	padding: 20px 0;
+}
+
+#slideDownMenu li {
+	line-height:  50px;
+}
+
+#slideDownMenu li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+}
+
+#slideDownMenu li a:hover {
+	color: #ea9044;
+	border: 1px solid #ea9044;
+}
+
+header {
+	
+	background-position: center;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 150px;
+
+}
+
+#home img {
+	display: block;
+	margin: 0 auto;
+}
+
+#home ul, #home h1 {
+	text-align: center;
+}
+
+#home h1 {
+	font: 55px "Lobster" ;
+	color: #fefcf8;
+}
+
+#home li {
+	display: inline-block;
+	color: #fefcf8;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+#home a {					/* hamburger icon */
+	font-size: 30px;
+	text-decoration: none;
+}
+
+#navIcon {
+	position: absolute;
+	right: 50px;
+	top: 40px;
+}
+
+
+/*********************************************
+CONTENT 
+*********************************************/
+
+.circle-bg {			/*background for hours and address*/
+	width: 225px;
+	height: 229px;
+	margin: 0 auto;
+	background:url(../images/hour-bg.png)  no-repeat;
+	position: relative;
+	bottom: 125px;
+}
+
+.busineesInfo {
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	color: #fefcf8;
+	line-height: 25px;
+	text-align: center;
+}
+
+.city {
+	padding-bottom: 8px;
+}
+
+.dessertContainer {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+	bottom: 100px;
+}
+
+.dessertItems, .pastryItems, .coffeeChoices {
+	width: 280px;
+	float: left;
+	text-align: center;
+	
+}
+
+.dessertItems, .pastryItems {
+	margin-right: 25px;
+}
+
+.dessertContainer h2 {
+	font-size: 30px;
+	font-family: "Rufina", serif;
+	padding-bottom: 15px;
+	padding-top: 30px;
+	color: #333;
+}
+
+.pastryItems img, .coffeeChoices img {
+	margin-top: 23px;
+}
+
+.dessertContainer {
+	line-height: 25px;
+	color: #67676e;
+	font-size: 18px;
+}
+
+
+/********************************************
+MENU SECTION
+*********************************************/
+
+#menu {
+	padding-bottom: 100px;
+}
+
+#headingBg{width: 250px;
+		 height: 170px;
+		 padding-bottom: 50px;
+		 margin: 0 auto;
+		 position: relative;
+		 top: 60px;
+ background: url(../images/menu-bg1.png) no-repeat;
+}
+
+#headingBg h1 {
+	color: #fefcf8;
+	font-family: "Playfair Display", serif;
+	font-size: 60px;
+	text-align: center;
+	position: relative;
+	top: 30px;
+}
+
+.pricelist {
+	width: 400px;
+	height: 450px;
+	border: 1px solid gray;
+	
+	padding: 10px;
+}
+
+.pricelist h2{
+	font-size:  35px;
+	 font-family: "Playfair Display", serif;
+	 color: #ea9044;
+	 text-decoration: underline;
+	 margin-left: 30px;
+	
+}
+
+
+.border-style {					/*thicker border of pricelist*/
+	width: 420px;
+	border: 2px solid gray;
+	float: left;
+	padding: 3px 5px 3px 3px;
+	margin: 20px 20px 20px 25px;
+}
+
+
+.pricelist p {
+	text-transform: uppercase;
+	color: #fefcf8;
+	font: "Raleway", sans-serif;
+	font: 16px;
+	position: relative;
+	margin-left: 30px;
+	margin-top: 60px;
+	bottom: 30px;
+}
+
+span.ingredients {
+			color: gray;
+			text-transform: normal;
+			font-size: 14px;
+			position: absolute;
+			top: 30px;
+			right: 50px;
+}	
+
+span.price {
+	position: absolute;
+	right: 20px;
+	color: #fefcf8;
+}
+
+.coffeeSection {  				/*coffee heading*/
+	margin-top: 40px;
+}
+
+p.drinks {
+	margin-top: 0;
+	position: relative;
+	top: 20px;
+	line-height: 25px;
+
+}
+
+
+/**************************************
+ABOUT SECTION
+***************************************/
+
+#about {
+	background: #f0e9da url(../images/about-bg1.png)no-repeat right;
+	padding: 150px 0;
+	
+
+}
+
+#about h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 60px;
+	color: #ea9044;
+	position: relative;
+	bottom: 50px;
+
+	
+}
+
+#about p {
+	width: 450px;
+	line-height: 30px;
+	padding-bottom: 40px;
+	font-size: 16px;
+	margin-left: 20px;
+}
+
+
+.signature {
+	font-family: "HarabaraHand";
+	
+	
+}
+
+
+/*********************************************
+GALLERY
+**********************************************/
+
+#gallery {
+	height: 850px;
+}
+
+#gallery h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 60px;
+	color: #ea9044;
+	padding: 50px 0 50px 20px;
+}
+
+.foodGallery {
+	width: 750px;
+	float: right;
+	margin-right: 8px;
+}
+
+.galleryFilter {
+	float: left;
+	padding: 3px;
+	margin-left: 20px;
+	border: 4px solid #262422;
+}
+
+.galleryFilter ul {
+	border: 1px solid #333;
+	padding: 20px 30px;
+}
+
+.galleryFilter li {
+	line-height: 30px;
+	text-align: right;
+}
+
+.galleryFilter li a{
+	text-decoration: none;
+	color: #262422;
+	font-family: "Playfair", serif;
+	font-size: 18px;
+}
+
+.galleryFilter a:hover {
+	color: #ea9044;
+}
+
+
+/******************************************
+RESERVATION
+******************************************/
+
+
+
+input[type=text], 
+input[type=email], textarea{
+	font-size: 16px;
+	color: #333;
+}
+
+
+#reservation {
+	padding-bottom: 100px;
+}
+
+#reservation h1, #contact h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 60px;
+	color: #ea9044;
+	padding: 50px 0 50px 20px;
+}
+
+.reservInfo {
+	width: 350px;
+	margin-left: 20px;
+	float: left;
+}
+
+.reservInfo p {
+	padding-bottom: 30px;
+	line-height: 30px;
+}
+
+.phoneReservation {
+	width: 300px;
+	border: 3px solid #262422;
+	margin-top: 30px;
+	padding: 3px;
+}
+
+.phoneReservation p {
+	padding: 0;
+	text-align: center;
+	font-size: 18px;
+	line-height: 15px;
+}
+
+.phoneReservation img {
+	padding: 15px;
+	float: left;
+}
+
+.thinBorder {
+	padding:  20px 0;
+	border: 1px solid #262422;
+}
+
+
+#reservForm {
+	width: 550px;
+	border: 3px solid #262422;
+	padding: 4px;
+	float: right;
+	background:  #fff;
+	margin-right: 8px;
+}
+
+#reservForm p {
+	width: 273px;
+	border: 1px solid gray;
+}
+
+#reservForm label {
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+
+#reservForm input {
+	width: 150px;
+	padding: 15px 0;
+	position: relative;
+	left: 30px;
+	border: none;
+	
+
+}
+
+
+
+#reservForm .nrPerson   {
+	width: 50px;
+}
+#reservForm .reservTime{
+	width: 70px;
+}
+#reservForm .timeIcon {
+	background: url(../images/clock46.png) no-repeat ;
+	background-position: 200px 10px;
+	cursor: pointer;
+}
+
+#reservForm .calendar {
+	background: url(../images/calendar.png) no-repeat;
+	background-position: 200px 10px;
+}
+
+.reservMessage label {
+	position: relative;
+	top: 30px;
+	
+}
+
+.reservMessage textarea {
+	margin-left: 150px;
+}
+
+.topfields {
+	float: left;
+}
+
+input#sendReserv {
+	text-transform: uppercase;
+	background: none;
+	font-size: 20px;
+	width: 250px;
+	position: relative;
+	left: 230px;
+	
+
+}
+
+
+
+#reservForm .reservMessage {
+	width: 548px;
+}
+
+
+
+
+.stampSend {
+     background: url(../images/stamp.png) no-repeat center left;
+     
+     padding: 30px 0;
+}
+
+
+
+
+
+#reservForm p:last-child {
+	width: 548px;
+	padding: 45px 0;
+}
+
+/******************************************************
+CONTACT SECTION
+*******************************************************/
+
+#contact {
+	padding-bottom: 100px;
+}
+
+textarea {
+	width: 350px;
+	height: 280px;
+	border: none;
+	margin: 10px 0;
+}
+
+#contactForm {
+	
+		width: 500px;
+	border: 3px solid #262422;
+padding: 4px;
+margin-right: 8px;
+float: right;
+background:  #fff;
+}
+
+#contactForm p {
+	border: 1px solid #262422;
+	width: 498px;
+	text-transform: uppercase;
+}
+
+#contactForm  label{
+	margin-left: 15px;
+ margin-right: 10px;
+}
+
+#contactForm input{
+	padding: 20px 0px;
+	width: 300px;
+	border: none;
+	margin-left: 20px;
+}
+
+#contactForm .name, #contactForm .email {
+	padding-right: 8px;
+}
+
+.contactMessage {
+	position: relative;
+	bottom: 250px;
+}
+
+#sendMessage {
+
+text-transform: uppercase;
+	font-size: 20px;
+	position: relative;
+	left: 150px;
+	background: none;
+}
+
+#sendMessage:hover, #sendReserv:hover {
+	color: #ea9044;
+	cursor: pointer;
+}
+
+.location {
+	
+	margin-left: 20px;
+	width: 400px;
+	float: left;
+}
+
+.location ul {
+	font-weight: bold;
+
+
+}
+
+.location li {
+	line-height: 35px;
+}
+
+.location li:last-child {
+	font-weight: normal;
+}
+
+.googleMap {
+	margin-top: 50px;
+}
+
+
+/*****************************************
+FOOTER 
+******************************************/
+
+footer {
+	background: transparent;
+	color: #fefcf8;
+	padding: 100px 0;
+}
+
+footer a {
+	color: #ea9044;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.social {
+	width: 480px;
+	margin-left: 20px;
+	float: left;
+}
+
+.twitter-tweet {
+	line-height: 20px;
+}
+
+.socialMedia {
+	margin-top: 60px;
+}
+
+.socialMedia a {
+	margin-right: 8px;
+}
+
+.nav-footer {
+	width: 150px;
+	float: left;
+	
+	margin-left: 60px;
+	margin-right: 50px;
+}
+
+.openHours {
+ 	width: 200px;
+	text-align: center;
+	float: left;
+	line-height: 25px;
+
+	
+}
+
+.nav-footer li {
+	line-height: 25px;
+}
+
+.nav-footer a {
+	text-decoration: none;
+
+}
+
+
+.copyright {
+	text-align: center;
+	background: #4a4a4a;
+	color: #fefcf8;
+	padding: 20px 0;
+	font-size: 14px;
+	
+
+}
+
+.copyright a {
+	padding: 0 8px;
+	color: #fefcf8;
+}
+
+.scrollTop {
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+}
+
+
+/****** Extended Background ******/
+
+.extendBg-header {
+	background: url(../images/coffee_macaroons_orig.jpg) no-repeat;
+	
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.extendedBg-menu {
+	width: 100%;
+	background: #262422 url(../images/muffin-bg.png) no-repeat right;
+	
+}
+
+.extendBg-products{
+	background: #fffafa;
+	width: 100%;
+}
+
+.extendBg-about {
+	background: #f0e9da;
+	width: 100%;
+}
+
+.extendBg-gallery {
+	background: #fefcf8 url(../images/baker-bg.png) no-repeat left center;
+	width: 100%;
+
+}
+
+.extendBg-reser {
+	background: #f0e9da url(../images/reserv-bg.png)no-repeat right bottom;
+	width: 100%;
+}
+
+.extendBg-contact {
+	background: #fefcf8;
+	width: 100%;
+}
+
+.extendBg-footer {
+	background:  #404045 url(../images/coffee-spoon.png) no-repeat right;
+	width: 100%;
+
+}
+
+.required_Message {
+	
+	
+	position: relative;
+	left: 630px;
+	bottom: 300px;
+	
+	width: 350px;
+	height: 20px;
+	
+}
+
+
+
+.closed {
+	color: #fff;}
+
+	input:focus, textarea:focus {
+		background: #f5f5f5;
+	}
+input[placeholder] {
+	color: #9e9e9e;
+}
+
+
+
